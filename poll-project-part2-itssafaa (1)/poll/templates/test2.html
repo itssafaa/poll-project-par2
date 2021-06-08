@@ -1,0 +1,22 @@
+<html>
+     <body>
+        <h1>{{ poll1.title}}</h1>
+        <ul>
+          <li>ID  : {{ poll1.id }} </li>
+          <li>Status  : {{ poll1.status }} </li>
+          <li>Active until : {{ poll1.active_until }} </li>
+          <li>Question : {{ poll1.question }}
+            <ol>
+              <h3>Choices available  :</h3>
+              {% for c in Option1 %}
+                <li><a href="{% url 'test5' c.title %}">{{ c.title }}</a></li>
+              {% endfor %}
+            </ol> 
+
+
+
+          </li>
+        </ul>
+
+    </body>
+</html>

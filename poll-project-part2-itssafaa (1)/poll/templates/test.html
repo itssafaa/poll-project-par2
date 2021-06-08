@@ -1,0 +1,27 @@
+<html>
+     <body>
+     <ul>
+     <h3>counts Polls</h3>
+     {% for i in con%}
+      {{i}}<br/>
+     {% endfor %}
+      <h2>Publishe List</h2>
+     {%for item in Published %}
+     <h3>
+       <li><a href="{% url 'test4' item.id %}">Poll Title :{{item.title}}</a>&ensp;&ensp;&ensp;&ensp;Active date :&ensp;{{item.active_until}}</li>
+
+     <h3>
+
+     {% endfor %}
+      
+     </ul>
+     <br/>
+     <ol>
+      <h2>Unpublishe List</h2>
+      {%for item in Unpublished %}
+     <h3><li><a href="{% url 'test4' item.id %}">Poll Title :{{item.title}}</a>&ensp;&ensp;&ensp;&ensp;Active date :&ensp;{{item.active_until}}</li><h3>
+     {% endfor %}
+      </ol>
+
+    </body>
+</html>

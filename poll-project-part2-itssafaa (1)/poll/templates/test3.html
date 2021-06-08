@@ -1,0 +1,21 @@
+<html>
+     <body>
+       {{cont}}
+        <h1>Choise is :{{ opt.title}}</h1>
+        <ul>
+         <h3>names list and time  :</h3>
+            <ol>
+             
+              {% for c in res %}
+               <h3><li>{{ c.name }} &ensp;&ensp;&ensp; {{ c.response_time }}</li></h3>
+         
+              {% endfor %}
+            </ol> 
+
+
+
+          </li>
+        </ul>
+
+    </body>
+</html>
