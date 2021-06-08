@@ -32,6 +32,8 @@ def detailed_view(request,pollid):
 def index(request):
   return render(request, "index.html")
 
+  
+
 
 
 
